@@ -9,16 +9,19 @@ namespace BasicPrograms
         Utility utility = new Utility();
 
         int num;
+
+        /// <summary>
+        /// Powers the of.
+        /// </summary>
         public void PowerOf()
         {
            Console.WriteLine("Enter the Number ");
-            num = utility.ReadInt();
+            num = this.utility.ReadInt();
 
-            utility.FindPowerTwo(num);
+            this.utility.FindPowerTwo(num);
 
-        }
-            }
+        } ////end PowerOf Method
+    }////End PowerOfTwo 
 
-
-    }
+  }////End the Namespace
 
