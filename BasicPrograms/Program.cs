@@ -30,7 +30,10 @@ namespace BasicPrograms
                 Console.WriteLine(" 4. Power Of Two ");
                 Console.WriteLine(" 5. Harmonic Number ");
                 Console.WriteLine(" 6. Prime Factor ");
-                Console.WriteLine(" 7. Exit ");
+                Console.WriteLine(" 7. Triplet sum Zero ");
+              
+               Console.WriteLine(" 8. Exit ");
+
                     choice = utility.ReadInt();
 
                 ////switch case for user Input Action
@@ -40,33 +43,46 @@ namespace BasicPrograms
                         ReplaceString obj = new ReplaceString();
                         obj.Replace();
                         break;
+
                     case 2:
                         FlipToss ft = new FlipToss();
                         ft.TossCoin();
                         break;
+
                     case 3:
                         LeapYear ly = new LeapYear();
                         ly.FindLeapYear();
                         break;
+
                     case 4:
                         PowerOfTwo pt = new PowerOfTwo();
                         pt.PowerOf();
                         break;
+
                    case 5:
                             HarmonicNumber hn = new HarmonicNumber();
                             hn.HarmonicNum();
                             break;
-                        case 6:
+
+                    case 6:
                             PrimeFactores pf = new PrimeFactores();
                             pf.isPrime();
                             break;
                     case 7:
-                        flag = false;
-                        break;
+                            TripletOfZero toz = new TripletOfZero();
+                            toz.isSumZero();
+                            break;
+                
+                     
+                      
+                        case 8:
+                           flag = false;
+                            break;
 
-                    default:
-                        Console.WriteLine(" Wrong Input Please Enter Correct Input");
-                        break;
+
+                     default:
+                           Console.WriteLine(" Wrong Input Please Enter Correct Input");
+                           break;
                 }////end the  switch
             }////end the while
 

@@ -85,7 +85,7 @@ namespace BasicPrograms
             Console.WriteLine(" Tail Percentage is : {0} ", TailPercentage);
         }
 
-        /******************************************** Leap Year ***********************************************************************************************/
+  /******************************************** Leap Year ***********************************************************************************************/
 
         /// <summary>
         /// Leaps the year.
@@ -160,5 +160,25 @@ namespace BasicPrograms
                 Console.WriteLine();
             }
         } //End insertElements
+
+        /************************************** Quadratic Equation Root ***************************************************************************************/
+        /// <summary>
+        /// Finds the root.
+        /// </summary>
+        /// <param name="a">a.</param>
+        /// <param name="b">The b.</param>
+        /// <param name="c">The c.</param>
+        public void findRoot(int a, int b, int c)
+        {
+          
+                int delta = b * b - 4 * a * c;
+                int sqrt = (int)Math.Pow(delta, 0.5);
+                int root1 = (-b + sqrt) / (2 * a);
+                int root2 = (-b - sqrt) / (2 * a);
+
+                Console.WriteLine("Root 1 ", root1);
+                Console.WriteLine("Root 2 ", root2);
+           
+        }//End the findRoot
     }////End the Utility Class
 } ////End the Namespace

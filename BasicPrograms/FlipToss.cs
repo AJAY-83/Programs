@@ -1,4 +1,9 @@
-﻿namespace BasicPrograms
+﻿//-----------------------------------------------------------------------
+// <copyright file="NameOfFile.cs" company="CompanyName">
+//     Company copyright tag.
+// </copyright>
+//-----------------------------------------------------------------------
+namespace BasicPrograms
 {
 using System;
 
