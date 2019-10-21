@@ -1,35 +1,45 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿//-----------------------------------------------------------------------
+// <copyright file="ReplaceString.cs" company="CompanyName">
+//     Company copyright tag.
+// </copyright>
+//-----------------------------------------------------------------------
 
 namespace BasicPrograms
 {
-    class ReplaceString
-    {
-        ////this is utility class there all logic part
-        Utility utility = new Utility();
+    using System;
+    using System.Collections.Generic;
+    using System.Text;
 
-        ///this variable is use to take Username
-        String userName;
+    /// <summary>
+    /// This class replace the string
+    /// </summary>
+  public class ReplaceString
+    {
+        /// <summary>
+        /// The utility is utility class there all logic part
+        /// </summary>
+      readonly Utility utility = new Utility();
+
+        /// <summary>
+        /// This variable is use to take Username
+        /// </summary>
+
+        private string userName;
+
+        /// <summary>
+        /// Replaces this instance.
+        /// </summary>
 
         public void Replace()
-        {
+          {
             Console.WriteLine("Enter your UserName : ");
-
             ////Read method will returnthe String
-            userName = this.utility.ReadString();
-
-
-            String template = "Hello <<username>>, How are you".Replace("<<username>>", userName);
-
+            this.userName = this.utility.ReadString();
+            string template = "Hello <<username>>, How are you".Replace("<<username>>", this.userName);
             ////Print the replaced string here
             Console.WriteLine(template);
-
-
-
-
             ////console.ReadKey() function is used to hold the screen
             Console.ReadKey();
-        }////End Replace Method
-    } ////End the ReplaceString
-}////End Namespace
+        }
+    }
+}

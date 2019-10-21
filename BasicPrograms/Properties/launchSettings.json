@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "BasicPrograms": {
+      "commandName": "Project",
+      "commandLineArgs": "10   20"
+    }
+  }
+}

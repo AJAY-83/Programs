@@ -1,15 +1,24 @@
-﻿using System;
-
+﻿//-----------------------------------------------------------------------
+// <copyright file="Program.cs" company="CompanyName">
+//     Company copyright tag.
+// </copyright>
+//-----------------------------------------------------------------------
 namespace BasicPrograms
 {
-    class Program
+    using System;
+
+    /// <summary>
+    /// This is main class ,it is entry point of code
+    /// </summary>
+    
+    public class Program
     {
         /// <summary>
         /// Defines the entry point of the application.
         /// </summary>
         /// <param name="args">The arguments.</param>
         
-        static void Main(string[] args)
+       public static void Main(string[] args)
         {
         Lable: try
             {
@@ -20,19 +29,19 @@ namespace BasicPrograms
             int choice;
 
             ////flag is use to to continue the loop while it true
-            Boolean flag = true;
+            bool flag = true;
 
             while (flag)
             {
                 Console.WriteLine("\n\n 1.Replace Srtring ");
-                Console.WriteLine(" 2.Flip Toss ");
+                Console.WriteLine(" 2. Flip Toss ");
                 Console.WriteLine(" 3. Leap Year ");
                 Console.WriteLine(" 4. Power Of Two ");
                 Console.WriteLine(" 5. Harmonic Number ");
                 Console.WriteLine(" 6. Prime Factor ");
                 Console.WriteLine(" 7. Triplet sum Zero ");
-              
-               Console.WriteLine(" 8. Exit ");
+                Console.WriteLine(" 8. WildChill");
+                Console.WriteLine(" 9. Exit ");
 
                     choice = utility.ReadInt();
 
@@ -43,65 +52,50 @@ namespace BasicPrograms
                         ReplaceString obj = new ReplaceString();
                         obj.Replace();
                         break;
-
                     case 2:
                         FlipToss ft = new FlipToss();
                         ft.TossCoin();
                         break;
-
                     case 3:
                         LeapYear ly = new LeapYear();
                         ly.FindLeapYear();
                         break;
-
                     case 4:
                         PowerOfTwo pt = new PowerOfTwo();
                         pt.PowerOf();
                         break;
-
                    case 5:
                             HarmonicNumber hn = new HarmonicNumber();
                             hn.HarmonicNum();
                             break;
-
                     case 6:
                             PrimeFactores pf = new PrimeFactores();
-                            pf.isPrime();
+                            pf.IsPrime();
+                            
                             break;
                     case 7:
                             TripletOfZero toz = new TripletOfZero();
-                            toz.isSumZero();
+                            toz.IsSumZero();
                             break;
-                
-                     
-                      
                         case 8:
+                            WildChill wc = new WildChill();
+                            wc.ConvertTemp(args[0],args[1]);
+                            break;
+                        case 9:
                            flag = false;
                             break;
-
-
                      default:
                            Console.WriteLine(" Wrong Input Please Enter Correct Input");
                            break;
-                }////end the  switch
-            }////end the while
-
-            //console.ReadKey() function is used to hold the screen
-            Console.ReadKey();
-
-        }////End Try Block
-
-            //it use to take a correct input from user
-        catch(Exception)
-        {
-                Console.WriteLine("Please Enter Correct Options");
+                    }
+                }
+                Console.ReadKey();
+            }
+            catch (Exception)
+            {
+                Console.WriteLine("Please Enter Correct Option");
                 goto Lable;
-
-       }////End Catch
-
-}  ////End Main
-
- 
-    
-    }////End the Class
-} ////End Namespace
+            }
+        }
+    }
+} 

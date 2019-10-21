@@ -1,40 +1,43 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
+﻿//-----------------------------------------------------------------------
+// <copyright file="LeapYear.cs" company="CompanyName">
+//     Company copyright tag.
+// </copyright>
+//----------------------------------------------------------------------
 namespace BasicPrograms
 {
+    using System;
+    using System.Collections.Generic;
+    using System.Text;
+
     /// <summary>
-    /// this class is use to Find the Entered Year is leap Year or Not
+    /// This class is use to Find the Entered Year is leap Year or Not
     /// </summary>
-
-    class LeapYear
+   public class LeapYear
     {
-        ////utility in that All Logic are Written
-
-        Utility utility = new Utility();
-
-        ////Function to useEnter the User input 
-
+      /// <summary>
+     /// The utility  in that All Logic are Written
+     /// </summary>
+       readonly Utility utility = new Utility();
+        /// <summary>
+        /// Finds the leap year.
+        /// </summary>
         public void FindLeapYear()
         {
-            int Year;
+            int year;
             Console.WriteLine("Enter the Year ");
-            Year = this.utility.ReadInt();
+            year = this.utility.ReadInt();
 
             ////Boolean Result to take Output from Utility class is return
-          Boolean Result = this.utility.LeapYear(Year);
+          bool result = this.utility.LeapYear(year);
 
-            if (Result)
+            if (result)
             {
-                Console.WriteLine("{0} is Leap Year ", Year);
+                Console.WriteLine("{0} is Leap Year ", year);
             }
             else
             {
-                Console.WriteLine("{0} is Not Leap Year ", Year);
+                Console.WriteLine("{0} is Not Leap Year ", year);
             }
-
-        }////End FindLeapYear
-
-    }////End theLeapYear class
-}////End the namespace
+        }
+    }
+}

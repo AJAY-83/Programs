@@ -1,14 +1,29 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿//-----------------------------------------------------------------------
+// <copyright file="PowerOfTwo.cs" company="CompanyName">
+//     Company copyright tag.
+// </copyright>
+//-----------------------------------------------------------------------
 
 namespace BasicPrograms
 {
-    class PowerOfTwo
+    using System;
+    using System.Collections.Generic;
+    using System.Text;
+    
+    /// <summary>
+    /// Find the power of two
+    /// </summary>
+  public class PowerOfTwo
     {
-        Utility utility = new Utility();
+        /// <summary>
+        /// The utility
+        /// </summary>
+     readonly Utility utility = new Utility();
 
-        int num;
+        /// <summary>
+        /// The number use for find the power of user input number
+        /// </summary>
+        private int num;
 
         /// <summary>
         /// Powers the of.
@@ -16,12 +31,8 @@ namespace BasicPrograms
         public void PowerOf()
         {
            Console.WriteLine("Enter the Number ");
-            num = this.utility.ReadInt();
-
-            this.utility.FindPowerTwo(num);
-
-        } ////end PowerOf Method
-    }////End PowerOfTwo 
-
-  }////End the Namespace
-
+            this.num = this.utility.ReadInt();
+            this.utility.FindPowerTwo(this.num);
+        }
+    }
+}
