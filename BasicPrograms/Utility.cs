@@ -163,9 +163,9 @@ namespace BasicPrograms
         //// r is use  as a rows and c is use as column
         public void DisplayArray(object[,] array)
         {
-            for (int r = 0; r < 2; r++)
+            for (int r = 0; r < array.Length; r++)
             {
-                for (int c = 0; c < 2; c++)
+                for (int c = 0; c < array.Length; c++)
                 {
                     Console.Write(array[r, c] + " ");
                 }
