@@ -33,7 +33,7 @@ namespace BasicPrograms
 
             while (flag)
             {
-                Console.WriteLine("\n\n 1.Replace Srtring ");
+                Console.WriteLine("\n\n 1. Replace Srtring ");
                 Console.WriteLine(" 2. Flip Toss ");
                 Console.WriteLine(" 3. Leap Year ");
                 Console.WriteLine(" 4. Power Of Two ");
