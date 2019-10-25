@@ -33,7 +33,9 @@ namespace LogicalAndJUnit
                     Console.WriteLine(" 4. Vending Machine ");
                     Console.WriteLine(" 5. Day Of Week ");
                     Console.WriteLine(" 6. Temprature Conversion ");
-                    Console.WriteLine(" 7. Exit ");
+                    Console.WriteLine(" 7. Monthly Payment ");
+                    Console.WriteLine(" 8. Square Root ");
+                    Console.WriteLine(" 9. Exit ");
                     Console.WriteLine("-----------------------------------------------------------------------------------------------------");
                     Console.WriteLine(" Enter Your Choice ");
                     choice = utility.ReadInt();
@@ -64,6 +66,14 @@ namespace LogicalAndJUnit
                             tc.TempConversion();
                             break;
                         case 7:
+                            MonthlyPayment mp = new MonthlyPayment();
+                            mp.MonthlyPay();
+                            break;
+                        case 8:
+                            SquareRoot sr = new SquareRoot();
+                            sr.FindSquareRoot();
+                            break;
+                        case 9:
                             flag = false;
                             break;
                         default:

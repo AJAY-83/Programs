@@ -101,5 +101,48 @@ namespace LogicalAndJUnit
             ////retrun the day
             return d;
         }
+        
+        /*************************** Monthly Salary ********************************************************************************/
+       
+        /// <summary>
+        /// Monthlies the sal.
+        /// </summary>
+        /// <param name="p">The p is payment</param>
+        /// <param name="y">The y is year</param>
+        /// <param name="r">The r </param>
+        /// <returns>Return the payment</returns>
+      public double MonthlySal(double p, double y, double r)
+        {
+            double n = 12 * y;
+         double r1 = r / (12 * 100);
+
+            double num = p * r1;
+            double power = (double)Math.Pow(1 + r1, -n);
+            double deno = 1 - power;
+            double payment = num / deno;
+            return payment;
+        }
+
+        /********************* Square Root **********************************************************************************/
+       
+        /// <summary>
+        /// Gates the square root.
+        /// </summary>
+        /// <param name="c">The c.</param>
+        /// <returns>return t as square root</returns>
+        public int GateSquareRoot(double c)
+        {
+            double t = c;
+            ////epsiloln formula 
+            double epsilon = 1e-15;
+            while (Math.Abs((t - c) / t) > (epsilon * t))
+            {
+                t = ((c / t) + t) / 2.0;                
+            }
+            ////convert the double into integer
+            int t1 = Convert.ToInt32(t);
+            ////retrun the t1
+            return t1;
+        }
     }
 }
