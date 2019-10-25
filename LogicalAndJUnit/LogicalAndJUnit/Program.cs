@@ -29,7 +29,11 @@ namespace LogicalAndJUnit
                 {
                     Console.WriteLine(" 1. Coupon Number ");
                     Console.WriteLine(" 2. Start Time ");
-                    Console.WriteLine(" 3. Exit ");
+                    Console.WriteLine(" 3. Gambler ");
+                    Console.WriteLine(" 4. Vending Machine ");
+                    Console.WriteLine(" 5. Day Of Week ");
+                    Console.WriteLine(" 6. Temprature Conversion ");
+                    Console.WriteLine(" 7. Exit ");
                     Console.WriteLine("-----------------------------------------------------------------------------------------------------");
                     Console.WriteLine(" Enter Your Choice ");
                     choice = utility.ReadInt();
@@ -44,6 +48,22 @@ namespace LogicalAndJUnit
                             st.SimulateTime();
                             break;
                         case 3:
+                            Gambler g = new Gambler();
+                            g.WinOrLoss();
+                            break;
+                            case 4:
+                            VendingMachine vm = new VendingMachine();
+                            vm.MachineVending();
+                            break;
+                        case 5:
+                            DayOfWeek dw = new DayOfWeek();
+                            dw.WeekDay();
+                            break;
+                        case 6:
+                            TemperatureConversion tc = new TemperatureConversion();
+                            tc.TempConversion();
+                            break;
+                        case 7:
                             flag = false;
                             break;
                         default:
