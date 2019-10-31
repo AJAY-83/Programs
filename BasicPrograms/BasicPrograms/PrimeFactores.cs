@@ -17,32 +17,35 @@ namespace BasicPrograms
         /// <summary>
         /// This is utility class in that have the all logical part
         /// </summary>
-     readonly Utility utility = new Utility();
+    private readonly Utility utility = new Utility();
+
         /// <summary>
         /// The number is user input to find that number factors
         /// </summary>
        private int number;
+
         /// <summary>
         /// Find the Number Is prime or Not
-        /// </summary
+        /// </summary>
         public void IsPrime()
-        {
-          
+        { 
         Console.WriteLine("Enter the Number : ");
-            number = this.utility.ReadInt();
-            for (int i = 2; i*i<= number; i++)
+            this.number = this.utility.ReadInt();
+            ////for loop for iteratit till the number
+            for (int i = 2; i * i <= this.number; i++)
             {
-                while (number % i == 0)
+                //// divisor of number 
+                while (this.number % i == 0)
                 {
                     Console.WriteLine("{0}", i);
-                    number = number / i;
+                    this.number = this.number / i;
                 }
             }
-            if (number > 1)
+
+            if (this.number > 1)
             {
-                Console.WriteLine("{0}",number);
+                Console.WriteLine("{0}", this.number);
             }
-          
-        }
+          }
     }
 }

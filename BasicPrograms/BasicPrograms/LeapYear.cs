@@ -17,7 +17,8 @@ namespace BasicPrograms
       /// <summary>
      /// The utility  in that All Logic are Written
      /// </summary>
-       readonly Utility utility = new Utility();
+      private readonly Utility utility = new Utility();
+
         /// <summary>
         /// Finds the leap year.
         /// </summary>

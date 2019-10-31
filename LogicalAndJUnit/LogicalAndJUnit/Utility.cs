@@ -70,7 +70,7 @@ namespace LogicalAndJUnit
                     ////reduce thay amount from the array
                     x = x - arr[i];
                     ////print the remaining amounts
-                    Console.WriteLine("Remaining Amount is ", x);
+                    Console.WriteLine("Remaining Amount is " + x);
                     ////count is how much note are going out that much only
                     count++;
                 }
@@ -143,6 +143,66 @@ namespace LogicalAndJUnit
             int t1 = Convert.ToInt32(t);
             ////retrun the t1
             return t1;
+        }
+
+        /**************************** Decimmal to Binary ************************************************************/
+
+        /// <summary>
+        /// Converts to binary.
+        /// </summary>
+        /// <param name="number">The number.</param>
+        /// <returns>return convert as a string that is binary number</returns>
+        public string ToBinary(int number)
+        {
+            //// convert is string is used to stored the binary number
+            string convert = " ";
+            //// it is use to stored remainder 
+            int rem;
+
+            ////while loop execute the till number is > 0
+            while (number > 0)
+            { 
+                rem = number % 2;
+                ////  convert stored the remainder value into the convert variable
+                convert = rem + " " + convert;
+                ///// number divide the 2 
+                number = number / 2;
+            }
+            ////return the converted string
+            //// that having  the binary number
+            return convert;
+        }
+
+        /*************************** Binary To Decimal *********************************************************************************/
+
+        /// <summary>
+        /// Binaries to decimal.
+        /// </summary>
+        /// <param name="b">The b.</param>
+        /// <returns> Return the decimal number</returns>
+        public int BinaryToDecimal(int b)
+        {
+            //// double type decimal number to store the decimal value
+            double deciml = 0;
+            int n = 0;
+
+            while (true)
+            {
+                if (b == 0)
+                {
+                    break;
+                }
+                else
+                {
+                    int temp = b % 10;
+                    deciml += temp * Math.Pow(2, n);
+                    b = b / 10;
+                    n++;
+                }
+            }
+
+            int result = Convert.ToInt32(deciml);
+            return result;
         }
     }
 }

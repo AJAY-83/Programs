@@ -6,12 +6,11 @@
 namespace BasicPrograms
 {
     using System;
-    using System.Collections.Generic;
-    using System.Text;
+
     /// <summary>
     /// Class is use to implements operation on array like insert Integer, double and boolean
     /// </summary>
-   public class TwoDArray
+    public class TwoDArray
      {
         /// <summary>
         /// Defines the entry point of the application.
@@ -19,7 +18,8 @@ namespace BasicPrograms
         /// <param name="args">The arguments.</param>
        public static void Main(string[] args)
         {
-        Label: try
+        Label:
+            try
             {
                 Utility utility = new Utility();
 
@@ -29,12 +29,15 @@ namespace BasicPrograms
 
                 ////takes the integer from the user
                 Console.WriteLine("Enter the Elements for Interger Array : ");
-                for (int r = 0; r < 2; r++)
+
+                /// takes a input number of times
+                for (int rows = 0; rows < 2; rows++)
                 {
-                    for (int c = 0; c < 2; c++)
+                    /// takes a input values for number of times
+                    for (int column = 0; column < 2; column++)
                     {
                         ////takes the double type of values
-                        array[r, c] = utility.ReadInt();
+                        array[rows, column] = utility.ReadInt();
                     }
                 }
 
@@ -73,10 +76,9 @@ namespace BasicPrograms
 
                 Console.ReadKey();
             }
-            catch (Exception)
+            catch (Exception exception)
             {
-                Console.WriteLine("Please Enter correct input");
-                goto Label;
+                throw new Exception(exception.Message);
             }
         }
     }

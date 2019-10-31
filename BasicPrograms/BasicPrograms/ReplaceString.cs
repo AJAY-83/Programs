@@ -18,18 +18,16 @@ namespace BasicPrograms
         /// <summary>
         /// The utility is utility class there all logic part
         /// </summary>
-      readonly Utility utility = new Utility();
+     private readonly Utility utility = new Utility();
 
         /// <summary>
         /// This variable is use to take Username
         /// </summary>
-
         private string userName;
 
         /// <summary>
         /// Replaces this instance.
         /// </summary>
-
         public void Replace()
           {
             Console.WriteLine("Enter your UserName : ");

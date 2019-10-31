@@ -18,7 +18,7 @@ namespace BasicPrograms
         /// <summary>
         /// The utility class
         /// </summary>
-      readonly Utility utility = new Utility();
+     private readonly Utility utility = new Utility();
 
         /// <summary>
         /// This variable use to Take Number From User

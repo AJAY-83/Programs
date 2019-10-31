@@ -18,7 +18,7 @@ namespace BasicPrograms
         /// <summary>
         /// The utility
         /// </summary>
-     readonly Utility utility = new Utility();
+    private readonly Utility utility = new Utility();
 
         /// <summary>
         /// The number use for find the power of user input number

@@ -10,17 +10,16 @@ namespace BasicPrograms
     /// <summary>
     /// This is main class ,it is entry point of code
     /// </summary>
-    
     public class Program
     {
         /// <summary>
         /// Defines the entry point of the application.
         /// </summary>
         /// <param name="args">The arguments.</param>
-        
        public static void Main(string[] args)
         {
-        Lable: try
+        Lable:
+            try
             {
                 ////this is utility class there all logic part
                 Utility utility = new Utility();
@@ -79,7 +78,7 @@ namespace BasicPrograms
                             break;
                         case 8:
                             WildChill wc = new WildChill();
-                            wc.ConvertTemp(args[0],args[1]);
+                            wc.ConvertTemp(args[0], args[1]);
                             break;
                         case 9:
                            flag = false;
@@ -89,6 +88,7 @@ namespace BasicPrograms
                            break;
                     }
                 }
+
                 Console.ReadKey();
             }
             catch (Exception)

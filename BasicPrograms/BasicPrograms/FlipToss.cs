@@ -14,11 +14,11 @@ using System;
         /// <summary>
         /// The utility class
         /// </summary>
-        readonly Utility utility = new Utility();
+        private readonly Utility utility = new Utility();
+
         /// <summary>
         /// This variable to use toss the coin
         /// </summary>
-        
         private int toss;
 
         /// <summary>
