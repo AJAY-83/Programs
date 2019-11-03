@@ -11,7 +11,11 @@ namespace AlgorithmPrograms
     class BinarySearch
     {
 
+
+        
+
+
     }
 
-    Console.ReadKey();
+   
 }

@@ -89,13 +89,14 @@ namespace BasicPrograms
                     }
                 }
 
-                Console.ReadKey();
+                
             }
             catch (Exception)
             {
                 Console.WriteLine("Please Enter Correct Option");
                 goto Lable;
             }
+            //Console.ReadKey();
         }
     }
 } 
