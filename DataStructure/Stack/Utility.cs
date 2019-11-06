@@ -28,7 +28,7 @@ namespace Stack
         }
         public bool IsFull()
         {
-            if (top >= SIZE-1)
+            if (top >= SIZE)
             {
                 return true;
             }

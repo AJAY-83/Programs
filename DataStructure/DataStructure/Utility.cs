@@ -60,6 +60,32 @@ namespace DataStructure
             return array;
         }
 
+        public  string[,] isPrimeAnagram(int[] arr)
+        {
+            string[,] arr1 = new string[arr.Length, arr.Length];
+
+		for(int i=0;i<arr.Length;i++)
+		     {
+		      for(int j=i+1;j<arr.Length;j++)
+		      {
+		      string str1 = Convert.ToString(arr[i]);
+              string str2 = Convert.ToString(arr[j]);
+
+               char[] c1 = str1.ToCharArray();
+               char[] c2 = str2.ToCharArray();
+
+               Array.Sort(c1);
+		       Array.Sort(c2);
+		      
+		      if(Array.Equals(c1, c2))    
+		      {
+		    	  arr1[i,j]=str1+" "+str2;
+		      }
+             }
+		}
+            return arr1;
+	}
+
         /// <summary>
         /// Sets the end date.
         /// </summary>

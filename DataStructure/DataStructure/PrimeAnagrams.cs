@@ -18,37 +18,22 @@ namespace DataStructure
         public void isPrimeAnagram()
         { 
             Utility utility = new Utility();
-
             int[] arr = utility.CheckPrimeNumbers();
+            string[,] arr1 = utility.isPrimeAnagram(arr);
 
-            string string1;
-            string string2;
-            for (int i = 0; i < arr.Length; i++)
+            for (int i = 0; i < arr1.Length; i++)
             {
-                for (int j = i + 1; j < arr.Length; j++)
+                for (int j = 0; j < arr1.Length; j++)
                 {
-                    string1 = Convert.ToString(arr[i]);
-                    string2 = Convert.ToString(arr[j]);
-
-                   
-                   
-                    char[] c1 = string1.ToCharArray();
-                    char[] c2 = string2.ToCharArray();
-                    
-                    Array.Sort(c1);
-                   Array.Sort(c2);
-
-                    if (string1.Equals(string2))
+                    if (arr1[i,j] != null)
                     {
-                        Console.WriteLine("ad");
-                        Console.WriteLine(string1 + "\t" + string2);
-
+                        Console.WriteLine(arr1[i,j]+" ");
                     }
-                    
-                    
                 }
-                 
+
             }
+
+
         }
     }
 }

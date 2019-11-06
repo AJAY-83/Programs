@@ -21,9 +21,10 @@ namespace Stack
                     break;
                 }
             }
+            Utility utility = new Utility(size);
             if (valid)
             {
-                Utility utility = new Utility(size);
+                
                 int i = 0;
 
                 while (i < size)

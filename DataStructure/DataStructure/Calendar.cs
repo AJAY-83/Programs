@@ -31,9 +31,10 @@ namespace DataStructure
             int end_date = utility.SetEndDate(month, year);
             //// day variable take a value that return by dayOfWeek it will return the dayy within the month 
             int day = utility.DayOfWeek(1, month, year);
+            
             //// date[] 2D array get the calendar
             int[,] date = utility.GetCalender(day, end_date);
-            Console.Write(" Mon Tue Wend Thu Fri Sat Sun");
+            //Console.Write(" Mon Tue Wend Thu Fri Sat Sun");
             ////for loop print the Whole calendar
             for (int i = 0; i < 6; i++)
             {

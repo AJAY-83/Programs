@@ -1,0 +1,129 @@
+{
+  "Rice": [
+    {
+      "Name": "Brown",
+      "Weight": 1,
+      "Price": 60
+    },
+    {
+      "Name": "india gate basmati",
+      "Weight": 5,
+      "Price": 360
+    },
+    {
+      "Name": "Jeera Rice",
+      "Weight": 2,
+      "Price": 120
+    },
+    {
+      "Name": "kolam",
+      "Weight": 2,
+      "Price": 140
+    }
+  ],
+  "Pulses": [
+    {
+      "Name": "Mung Daal",
+      "Weight": 65,
+      "Price": 7
+    },
+    {
+      "name": "Toor Daal",
+      "weight": 1,
+      "price": 122
+    },
+    {
+      "name": "Masoor Daal",
+      "weight": 1,
+     "price": 200
+    }
+  ],
+  "Wheats": [
+    {
+      "Name": "Common Wheats",
+      "Weight": 10,
+      "Price": 100
+    },
+    {
+      "Name": "Emmer Wheat",
+      "Weight": 20,
+      "Price": 200
+    },
+    {
+      "Name": "Spelt Wheat",
+      "Weight": 30,
+      "Price": 300
+    }
+  ]
+}
+
+//[
+//		{
+
+//		   "Rice":
+//			   [
+//			    {
+//				"name":"Sona MasooriRice",
+//				"weigh": 1,
+//				"price":39
+//				},
+//				{
+//				"name":"Basmati Rice",
+//				"weight":1,
+//				"price":68
+//				},
+//				{
+//				"name":"Charminar Rice",
+//				"weight":1,
+//				"price":68
+//				},
+//				{
+//				"name":"Charminar Brown Rice",
+//				"weight":1,
+//				"price":99
+//				}
+//			]
+//		},
+//			{
+//				"Pulses": [
+//					{
+//						"name": "Toor Daal",
+//						"weight": 1,
+//						"price": 122
+//					},
+//					{
+//						"name": "Mung Daal",
+//						"weight": 1,
+//						"price": 272
+//					},
+//					{
+//						"name": "Masoor Daal",
+//						"weight": 1,
+//						"price": 200
+
+//					}
+//				]
+
+//			},
+
+//		   {
+//		     "Wheats":
+//			 [
+//			   {
+//			   "name":"Sarbati Wheat",
+//			   "weight":1,
+//			   "price":60
+//			   },
+//			   {
+//			   "name":"Puna Gold",
+//			   "weight":1,
+//			   "price":50
+//			   },
+//			   {
+//			   "name":"Aashirwad Wheat",
+//			   "weight":1,
+//			   "price":60
+//			   }
+//			 ]
+//	}
+//]

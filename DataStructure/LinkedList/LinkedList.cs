@@ -73,7 +73,7 @@ namespace LinkedList
             }
             else
             {
-                for (int i = 1; i < position; i++)
+                for (int i = 0; i < position; i++)
                 {
                     current = current.next;
                 }
