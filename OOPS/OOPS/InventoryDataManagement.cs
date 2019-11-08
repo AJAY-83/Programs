@@ -57,7 +57,7 @@ namespace OOPS
         /// <value>
         /// The weight.
         /// </value>
-        public double Weight { get; set; }
+        public int Weight { get; set; }
 
         /// <summary>
         /// Gets or sets the price.

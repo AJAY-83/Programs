@@ -1,0 +1,34 @@
+{
+  "Capgemini": [
+    {
+      "Number Of Shares Holder": 8,
+      "Directors": 5100,
+      "Foreign Promoters":29681581,
+      "General Public":1110023,
+      "Foreign Institutions": 637698,
+      "Other Companies": 161337,
+      "Foreign-NRI":142630,
+      "Others": 19233,
+      "Foreign Industries": 7343,
+      "Available Shares": 500,
+      "Share Price": 520,
+      "Total Shares Price": 31765145
+    }
+  ],
+  "TATA": [
+    {
+      "Number Of Shares Holder": 7,
+      "Promoters": 398823600,
+      "General Public": 200984963,
+      "Financial Institutions": 186997016,
+      "NBFC and Mutual Funds": 177776239,
+      "Foreign Institutions": 165646690,
+      "Others": 72578728,
+      "Central Government":
+
+      "Total Shares Price": 1204126385
+    }
+  ]
+
+
+}

@@ -10,6 +10,7 @@ namespace OOPS
     using System.Collections.Generic;
     using System.IO;
     using System.Linq;
+    
 
     /// <summary>
     /// Utility class for all programs.
@@ -39,6 +40,14 @@ namespace OOPS
         /// The wheats.
         /// </value>
         public List<Wheats> wheats { get; set; }
+
+        /// <summary>
+        /// Gets or sets the stock.
+        /// </summary>
+        /// <value>
+        /// The stock.
+        /// </value>
+      public List<Stock> Stock { get; set; }
 
         /// <summary>
         /// Inventory management which reads json file.
@@ -186,6 +195,7 @@ namespace OOPS
                             catch (FileNotFoundException fnot)
                             {
                                 Console.WriteLine(fnot.Message);
+
                             }
                             catch (Exception e)
                             {
@@ -269,9 +279,9 @@ namespace OOPS
                                 Console.WriteLine("Enter New Rice Name : ");
                                 update["Name"] = Console.ReadLine();
                                 Console.WriteLine("Enter New Rice Weight : ");
-                                update["Weight"] = Console.ReadLine();
+                                update["Weight"] = Convert.ToInt32(Console.ReadLine());
                                 Console.WriteLine("Enter New Rice Price : ");
-                                update["Price"] = Console.ReadLine();
+                                update["Price"] = Convert.ToInt32(Console.ReadLine());
                                 found = true;
                             }
 
@@ -310,9 +320,9 @@ namespace OOPS
                                 Console.WriteLine("Enter New Pulse Name : ");
                                 update["Name"] = Console.ReadLine();
                                 Console.WriteLine("Enter New Pulse Weight : ");
-                                update["Weight"] = Console.ReadLine();
+                                update["Weight"] = Convert.ToInt32(Console.ReadLine());
                                 Console.WriteLine("Enter New Pulse Price : ");
-                                update["Price"] = Console.ReadLine();
+                                update["Price"] = Convert.ToInt32(Console.ReadLine());
                                 found = true;
                             }
 
@@ -351,9 +361,9 @@ namespace OOPS
                                 Console.WriteLine("Enter New Wheat Name : ");
                                 update["Name"] = Console.ReadLine();
                                 Console.WriteLine("Enter New Wheat Weight : ");
-                                update["Weight"] = Console.ReadLine();
+                                update["Weight"] = Convert.ToInt32(Console.ReadLine());
                                 Console.WriteLine("Enter New Wheat Price : ");
-                                update["Price"] = Console.ReadLine();
+                                update["Price"] = Convert.ToInt32(Console.ReadLine());
                                 found = true;
                             }
 
@@ -592,29 +602,87 @@ namespace OOPS
 
             Console.WriteLine("------------------------------");
         }
-        //public void Display()
-        //{
-            
-        //    Console.WriteLine("------------------------------");
-        //    Console.WriteLine("Display the Player Cards");
-        //    Console.WriteLine("------------------------------");
-        //    for (int i = 0; i < 3; i++)
-        //    {
-        //        for (int j = 0; j < 4; j++)
-        //        {
-        //            int s = random.Next(suite.Length);
+        /******************************* Stock Report ***********************************************/
+        public static void DisplyReport()
+        {
+            double totalshares = 0;
 
-        //            Console.Write(player[i, j] + " " + suite[s] + " | ");
-        //            if (i == 2 && j == 0)
-        //            {
-        //                //  player[i, j] = rank[index];
-        //                break;
-        //            }
+            string filePath = "C:\\Users\\admin\\source\\repos\\OOPS\\OOPS\\stockreport.json";
+            StreamReader streamReader = new StreamReader(filePath);
+           
+            string read = streamReader.ReadToEnd();
+            StockAccount stockdata = (StockAccount)JsonConvert.DeserializeObject(read, typeof(StockAccount));
 
-        //        }
-        //        Console.WriteLine("\n");
-        //    }
-        //    Console.WriteLine("------------------------------");
-        //}
+
+         
+
+            //// Console.Write("Name : " + stockdata.name + "\n");
+            Console.WriteLine("****************************** Stock Report ***********************************");
+
+            foreach (Stock stockObject in stockdata.Stock)
+            {
+                string name = stockObject.Name;
+                int numberofshare = stockObject.Numberofshare;
+                double price = stockObject.Price;
+
+                Console.Write("Name : " + name + "\n");
+                Console.Write("price : " + price + "\n");
+                Console.Write("Number of Shares : " + numberofshare + "\n");
+                totalshares = price * numberofshare;
+                Console.WriteLine("The Total Share is : " + totalshares);
+                Console.WriteLine("\n");
+            }
+             
+        }
+
+        public static void AddData()
+        {
+            Label:
+            try
+            {
+                Console.WriteLine("How much stock do you want to Add : ");
+                int n = Convert.ToInt32(Console.ReadLine());
+                for (int i = 1; i <= n; i++)
+                {
+                    Console.WriteLine("Enter  The " + i + " Name Of Stock: ");
+                    string riceName = Console.ReadLine();
+
+                    Console.WriteLine("Enter number of shares : ");
+                    double riceWeight = Convert.ToDouble(Console.ReadLine());
+
+                    Console.WriteLine("Enter  Price : ");
+                    double ricePrice = Convert.ToDouble(Console.ReadLine());
+                    var newRiceMember = "{'Name': '" + riceName + "' ,'Weight':" + riceWeight + ",'Price':" + ricePrice + "}";
+
+
+                    //// FilePath have the path of that file where JSON file is stored
+                    string filePath = "C:\\Users\\admin\\source\\repos\\OOPS\\OOPS\\stockreport.json";
+                    var json = File.ReadAllText(filePath);
+                    var jsonObj = JObject.Parse(json);
+                    var riceArray = jsonObj.GetValue("Stock") as JArray;
+                    var newRice = JObject.Parse(newRiceMember);
+                    riceArray.Add(newRice);
+                    jsonObj["Stock"] = riceArray;
+                    string newJsonResult = Newtonsoft.Json.JsonConvert.SerializeObject(jsonObj, Newtonsoft.Json.Formatting.Indented);
+                    File.WriteAllText(filePath, newJsonResult);
+                    Console.WriteLine("Stock Added Successfully");
+                }
+            }
+            catch (FormatException format)
+            {
+                Console.WriteLine(format.Message);
+                goto Label;
+            }
+            catch (FileNotFoundException fnot)
+            {
+                Console.WriteLine(fnot.Message);
+                goto Label;
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine("Add Error : " + e.Message);
+                goto Label;
+            }
+        }
     }
 }

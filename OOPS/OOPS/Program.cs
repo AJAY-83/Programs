@@ -31,7 +31,7 @@ namespace OOPS
                 bool flag = true;
                 while (flag)
                 {
-                    Console.WriteLine(" 1. Desk Of Cards\n 2. Inventry \n 3. Inventry Managment \n 4. Exit ");
+                    Console.WriteLine(" 1. Desk Of Cards\n 2. Inventry \n 3. Inventry Managment \n 4. StockReport \n 5. Exit ");
                     Console.WriteLine("Enter your choice");
                     choice = Convert.ToInt32(Console.ReadLine());
                     switch (choice)
@@ -51,7 +51,13 @@ namespace OOPS
                             //// we can change that and also we can delete and add also
                             InventryManager.Inventory();
                             break;
+                            
                         case 4:
+                            ////Stock class have the store report
+                            StockReport stock = new StockReport();
+                            stock.StockDetails();
+                            break;
+                        case 5:
                             flag = false;
                             break;
                         default:
