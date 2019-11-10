@@ -1,8 +1,10 @@
-﻿//-----------------------------------------------------------------------
-// <copyright file="TripletOfZero.cs" company="CompanyName">
-//     Company copyright tag.
+﻿// --------------------------------------------------------------------------------------------------------------------
+// <copyright file="TripletOfZero.cs" company="Bridgelabz">
+//   Copyright © 2019 Company="BridgeLabz"
 // </copyright>
-//-----------------------------------------------------------------------
+// <creator name="Ajay Lodale"/>
+// --------------------------------------------------------------------------------------------------------------------
+
 namespace BasicPrograms
 {
     using System;

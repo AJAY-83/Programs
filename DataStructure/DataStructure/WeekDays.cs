@@ -1,5 +1,5 @@
 ﻿// --------------------------------------------------------------------------------------------------------------------
-// <copyright file="PalindromChecker.cs" company="Bridgelabz">
+// <copyright file="WeekDayscs.cs" company="Bridgelabz">
 //   Copyright © 2019 Company="BridgeLabz"
 // </copyright>
 // <creator name="Ajay Lodale"/>
@@ -11,18 +11,10 @@ using System.Text;
 
 namespace DataStructure
 {
-    class PalindromeChecker
+    class WeekDayscs
     {
-        public void IsPalindrome()
-       {
-            Console.WriteLine("Enter the String");
-            string str = Console.ReadLine();
+        Utility utility = new Utility();
+        string[] arr = { "S", "M", "T", "W", "TH" ,"F","S"};
 
-            ///char[] arr = str.ToCharArray();
-            DQueue q = new DQueue();
-            q.InsertFirst(str);
-
-           
-        }
     }
 }

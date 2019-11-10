@@ -1,7 +1,10 @@
-﻿// <copyright file="InventoryDataManagement.cs" company="CompanyName">
-//     Company copyright tag.
+﻿// --------------------------------------------------------------------------------------------------------------------
+// <copyright file="InventoryDataManagment.cs" company="Bridgelabz">
+//   Copyright © 2019 Company="BridgeLabz"
 // </copyright>
-//-----------------------------------------------------------------------
+// <creator name="Ajay Lodale"/>
+// --------------------------------------------------------------------------------------------------------------------
+
 namespace OOPS
 {
     using System;

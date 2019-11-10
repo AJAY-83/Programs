@@ -1,8 +1,10 @@
-﻿//-----------------------------------------------------------------------
-// <copyright file="BinarySearch.cs" company="CompanyName">
-//     Company copyright tag.
+﻿// --------------------------------------------------------------------------------------------------------------------
+// <copyright file="BinarySearch.cs" company="Bridgelabz">
+//   Copyright © 2019 Company="BridgeLabz"
 // </copyright>
-//-----------------------------------------------------------------------
+// <creator name="Ajay Lodale"/>
+// --------------------------------------------------------------------------------------------------------------------
+
 namespace AlgorithmPrograms
 {
     using System;

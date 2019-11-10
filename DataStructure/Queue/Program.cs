@@ -1,4 +1,11 @@
-﻿using System;
+﻿// --------------------------------------------------------------------------------------------------------------------
+// <copyright file="Program.cs" company="Bridgelabz">
+//   Copyright © 2019 Company="BridgeLabz"
+// </copyright>
+// <creator name="Ajay Lodale"/>
+// --------------------------------------------------------------------------------------------------------------------
+
+using System;
 
 namespace Queue
 {

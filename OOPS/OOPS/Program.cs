@@ -1,7 +1,10 @@
-﻿// <copyright file="Program.cs" company="CompanyName">
-//     Company copyright tag.
+﻿// --------------------------------------------------------------------------------------------------------------------
+// <copyright file="Program.cs" company="Bridgelabz">
+//   Copyright © 2019 Company="BridgeLabz"
 // </copyright>
-//----------------------------------------------------------------------
+// <creator name="Ajay Lodale"/>
+// --------------------------------------------------------------------------------------------------------------------
+
 namespace OOPS
 {
     using System;

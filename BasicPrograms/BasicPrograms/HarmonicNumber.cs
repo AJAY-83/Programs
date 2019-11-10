@@ -1,8 +1,10 @@
-﻿//-----------------------------------------------------------------------
-// <copyright file="HarmonicNumber.cs" company="CompanyName">
-//     Company copyright tag.
+﻿// --------------------------------------------------------------------------------------------------------------------
+// <copyright file="HarmonicNumber.cs" company="Bridgelabz">
+//   Copyright © 2019 Company="BridgeLabz"
 // </copyright>
-//-----------------------------------------------------------------------
+// <creator name="Ajay Lodale"/>
+// --------------------------------------------------------------------------------------------------------------------
+
 namespace BasicPrograms
 {
     using System;

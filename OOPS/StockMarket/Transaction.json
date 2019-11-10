@@ -1,12 +1,52 @@
-﻿{
+{
   "Transaction": [
     {
-      "Name": "xyz",
-      "Company": "pqr",
-      "Date": "10-10-2019",
-      "Shares": 10,
-      "Deducated Amount": 4000,
-      "Total Amount": 5000
+      "Name": "dsf",
+      "Company": "Capgemini",
+      "Date": "11-09-2019",
+      "Deducated_Amount": "400",
+      "Shares": "500",
+      "Total_Amount": "120"
+    },
+    {
+      "Name": "wsdf",
+      "Company": "Capgemini",
+      "Date": "11-09-2019",
+      "Shares": "1",
+      "Deducated_Amount": "400",
+      "Total_Amount": "140"
+    },
+    {
+      "Name": "dfvg",
+      "Company": "Capgemini",
+      "Date": "11-09-2019",
+      "Shares": "2",
+      "Deducated_Amount": "800",
+      "Total_Amount": "4951"
+    },
+    {
+      "Name": "dsf",
+      "Company": "Capgemini",
+      "Date": "11-09-2019",
+      "Shares": "10",
+      "Deducated_Amount": "4000",
+      "Total_Amount": "54472"
+    },
+    {
+      "Name": "Ajay Kumar",
+      "Company": "TATA",
+      "Date": "11-09-2019",
+      "Shares": "1",
+      "Deducated_Amount": "200",
+      "Total_Amount": "340"
+    },
+    {
+      "Name": "DipakSingh",
+      "Company": "TATA",
+      "Date": "11-09-2019",
+      "Shares": "10",
+      "Deducated_Amount": "2000",
+      "Total_Amount": "3000"
     }
   ]
 }

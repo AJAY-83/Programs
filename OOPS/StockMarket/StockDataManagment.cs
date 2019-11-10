@@ -1,4 +1,10 @@
-﻿
+﻿// --------------------------------------------------------------------------------------------------------------------
+// <copyright file="StockDataManagment.cs" company="Bridgelabz">
+//   Copyright © 2019 Company="BridgeLabz"
+// </copyright>
+// <creator name="Ajay Lodale"/>
+// --------------------------------------------------------------------------------------------------------------------
+
 namespace StockMarket
 {
     using System;
@@ -29,6 +35,48 @@ namespace StockMarket
         public List<TATARecord> TATA { get; set; }
 
         /// <summary>
+        /// Gets or sets the transaction records.
+        /// </summary>
+        /// <value>
+        /// The transaction records.
+        /// </value>
+        public List<TransactionRecord> Transaction { get; set; }
+
+
+        public class TransactionRecord  {
+
+            public string Name { get; set; }
+            public string Company { get; set; }
+            public string Date { get; set; }
+            public int Shares { get; set; }
+            public int Deducated_Amount { get; set; }
+            public int Total_Amount { get; set; }
+                
+                }
+
+        //public List<CapgeminiCompany> Capgemini_Records { get; set; }
+
+        //public List<TATACompany> TATA_Records { get; set; }
+
+        //public class CapgeminiCompany
+        //{
+        //    public int Available_Shares { get; set; }
+        //    public int Share_Price { get; set; }
+        //    public int Number_Of_Shares_Holder { get; set; }
+        //    public int Total_Shares_Price { get; set; }
+            
+        //}
+
+        //public class TATACompany
+        //{
+        //    public int Available_Shares { get; set; }
+        //    public int Share_Price { get; set; }
+        //    public int Number_Of_Shares_Holder { get; set; }
+        //    public int Total_Shares_Price { get; set; }
+
+        //}
+
+        /// <summary>
         ///  we create a class capgemini to get the value from json file
         ///  here we are takes just two values 
         ///  Avialable_Shares And Share_Price that only important now
@@ -38,6 +86,7 @@ namespace StockMarket
             public int Available_Shares { get; set; }
             public int Share_Price { get; set;}
             public int Number_Of_Shares_Holder { get; set; }
+            public int Total_Shares_Price { get; set; }
         }
 
         /// <summary>
@@ -49,6 +98,8 @@ namespace StockMarket
         {
             public int Available_Shares { get; set; }
             public int Share_Price { get; set; }
+            public int Number_Of_Shares_Holder { get; set; }
+            public int Total_Shares_Price { get; set; }
         }
     }
 }

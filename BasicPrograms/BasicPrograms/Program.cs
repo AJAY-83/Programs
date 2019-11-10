@@ -1,8 +1,10 @@
-﻿//-----------------------------------------------------------------------
-// <copyright file="Program.cs" company="CompanyName">
-//     Company copyright tag.
+﻿// --------------------------------------------------------------------------------------------------------------------
+// <copyright file="Program.cs" company="Bridgelabz">
+//   Copyright © 2019 Company="BridgeLabz"
 // </copyright>
-//-----------------------------------------------------------------------
+// <creator name="Ajay Lodale"/>
+// --------------------------------------------------------------------------------------------------------------------
+
 namespace BasicPrograms
 {
     using System;
@@ -96,7 +98,7 @@ namespace BasicPrograms
                 Console.WriteLine("Please Enter Correct Option");
                 goto Lable;
             }
-            //Console.ReadKey();
+            ////Console.ReadKey();
         }
     }
 } 

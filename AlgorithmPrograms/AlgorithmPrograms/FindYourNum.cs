@@ -1,8 +1,10 @@
-﻿//-----------------------------------------------------------------------
-// <copyright file="FindYourNum.cs" company="CompanyName">
-//     Company copyright tag.
+﻿// --------------------------------------------------------------------------------------------------------------------
+// <copyright file="FindYourNum.cs" company="Bridgelabz">
+//   Copyright © 2019 Company="BridgeLabz"
 // </copyright>
-//-----------------------------------------------------------------------
+// <creator name="Ajay Lodale"/>
+// --------------------------------------------------------------------------------------------------------------------
+
 namespace AlgorithmPrograms
 { 
 using System;
