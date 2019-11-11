@@ -33,20 +33,28 @@
       "Total_Amount": "54472"
     },
     {
-      "Name": "Ajay Kumar",
-      "Company": "TATA",
+      "Name": "Sam",
+      "Company": "Capgemini",
       "Date": "11-09-2019",
       "Shares": "1",
-      "Deducated_Amount": "200",
-      "Total_Amount": "340"
+      "Deducated_Amount": "400",
+      "Total_Amount": "142"
     },
     {
-      "Name": "DipakSingh",
-      "Company": "TATA",
+      "Name": "Ajay Kumar",
+      "Company": "Capgemini",
       "Date": "11-09-2019",
-      "Shares": "10",
-      "Deducated_Amount": "2000",
-      "Total_Amount": "3000"
+      "Shares": "1",
+      "Deducated_Amount": "400",
+      "Total_Amount": "4600"
+    },
+    {
+      "Name": "Ajay Kumar",
+      "Company": "Capgemini",
+      "Date": "11-09-2019",
+      "Shares": "1",
+      "Deducated_Amount": "400",
+      "Total_Amount": "100"
     }
   ]
 }

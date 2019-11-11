@@ -42,7 +42,11 @@ namespace StockMarket
         /// </value>
         public List<TransactionRecord> Transaction { get; set; }
 
-
+        /// <summary>
+        /// Transaction Record have the all records details
+        /// who buy the share ans from where 
+        /// and who sell the share and how much price
+        /// </summary>
         public class TransactionRecord  {
 
             public string Name { get; set; }
@@ -53,28 +57,6 @@ namespace StockMarket
             public int Total_Amount { get; set; }
                 
                 }
-
-        //public List<CapgeminiCompany> Capgemini_Records { get; set; }
-
-        //public List<TATACompany> TATA_Records { get; set; }
-
-        //public class CapgeminiCompany
-        //{
-        //    public int Available_Shares { get; set; }
-        //    public int Share_Price { get; set; }
-        //    public int Number_Of_Shares_Holder { get; set; }
-        //    public int Total_Shares_Price { get; set; }
-            
-        //}
-
-        //public class TATACompany
-        //{
-        //    public int Available_Shares { get; set; }
-        //    public int Share_Price { get; set; }
-        //    public int Number_Of_Shares_Holder { get; set; }
-        //    public int Total_Shares_Price { get; set; }
-
-        //}
 
         /// <summary>
         ///  we create a class capgemini to get the value from json file
@@ -87,6 +69,7 @@ namespace StockMarket
             public int Share_Price { get; set;}
             public int Number_Of_Shares_Holder { get; set; }
             public int Total_Shares_Price { get; set; }
+          
         }
 
         /// <summary>
@@ -101,5 +84,18 @@ namespace StockMarket
             public int Number_Of_Shares_Holder { get; set; }
             public int Total_Shares_Price { get; set; }
         }
-    }
+
+        public List<Capgemini_Holders> CapgeminiHolder{ get; set; }
+
+        public class Capgemini_Holders
+        {
+            public string Name { get; set; }
+            public string Shares { get; set; }
+            public string Money { get; set; }
+            public string Date { get; set; }
+            public string Since { get; set; }
+            public string Company { get; set; }
+        }
+
+}
 }

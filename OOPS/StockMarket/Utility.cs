@@ -6,15 +6,15 @@
 // --------------------------------------------------------------------------------------------------------------------
 namespace StockMarket
 {
-    using System;
-    using System.IO;
     using Newtonsoft.Json;
     using Newtonsoft.Json.Linq;
- 
+    using System;
+    using System.IO;
+
     /// <summary>
     /// Utility class have the all logical parts
     /// </summary>
-  public class Utility
+    public class Utility
     {
         /// <summary>
         /// Buys the shares.
@@ -83,7 +83,7 @@ namespace StockMarket
             {
                 Console.WriteLine(e2.Message);
             }
-            }
+        }
          
         
         /// <summary>
@@ -154,12 +154,13 @@ namespace StockMarket
                             // Reduce the share
                             // Increase the total share price
                             Holders(name, amount, myshares, campany, date, since);
-
+                            Utility utility = new Utility();
                             ////  CompanyDetails(name, myshares, companyname);
                             //// name is the name of person who buy the share 
                             //// company name which company give him shares when that store in date
                             //// How much amount he has and after buying how much amount(total) is left that is in amount
                             Transaction(name, companyname, date, total, amount, myshares);
+                          ////  utility.SellShares(name,amount,myshares);
                         }
                         else
                         {
@@ -250,6 +251,7 @@ namespace StockMarket
                     Holders(name, amount, myshares, campany, date, since);
                     ////  CompanyDetails(name, myshares, companyname);
                     Transaction(name, companyname, date, total, amount, myshares);
+                    
                 }
                 else
                 {
@@ -294,6 +296,8 @@ namespace StockMarket
                 jsonObj[company] = holderArray;
                 string newJsonResult = Newtonsoft.Json.JsonConvert.SerializeObject(jsonObj, Newtonsoft.Json.Formatting.Indented);
                 File.WriteAllText(filePath, newJsonResult);
+
+                Console.ForegroundColor = ConsoleColor.Green;
                 Console.WriteLine("Holder Added Successfully");
             }catch(FileNotFoundException e)
             {
@@ -333,6 +337,7 @@ namespace StockMarket
                 jsonObj["Transaction"] = holderArray;
                 string newJsonResult = Newtonsoft.Json.JsonConvert.SerializeObject(jsonObj, Newtonsoft.Json.Formatting.Indented);
                 File.WriteAllText(filePath, newJsonResult);
+                Console.ForegroundColor = ConsoleColor.Green;
                 Console.WriteLine("Transaction Added Successfully");
 
                 StockDataManagment data = JsonConvert.DeserializeObject<StockDataManagment>(File.ReadAllText(@"C:\Users\admin\source\repos\OOPS\StockMarket\Transaction.json"));
@@ -395,6 +400,35 @@ namespace StockMarket
 
                 total = total - mytotal;
             }
+        }
+
+        /************************* Sell Shares *************************************/
+        /// <summary>
+        /// 
+        /// </summary>
+        public  void SellShares()
+        {
+            StockDataManagment data = JsonConvert.DeserializeObject<StockDataManagment>(File.ReadAllText(@"C:\Users\admin\source\repos\OOPS\StockMarket\Holders.json"));
+
+           //// string name;
+            string amount="";
+            string myshares="";
+            foreach (StockDataManagment.Capgemini_Holders i in data.CapgeminiHolder)
+            {
+                amount = i.Money;
+                ////Console.WriteLine(" Share Rate : "+share_price);
+                myshares = i.Shares;
+               
+            }
+            StockDataManagment.Capgemini_Holders stockData = new StockDataManagment.Capgemini_Holders();
+
+            stockData.Shares = myshares;
+            
+            stockData.Money = amount;
+            data.CapgeminiHolder.Add(stockData);
+            string filePath = @"C:\Users\admin\source\repos\OOPS\StockMarket\Holders.json";
+            string newJsonResult = Newtonsoft.Json.JsonConvert.SerializeObject(data, Newtonsoft.Json.Formatting.Indented);
+            File.WriteAllText(filePath, newJsonResult);
         }
 
     }
