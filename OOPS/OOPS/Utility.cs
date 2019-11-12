@@ -198,11 +198,13 @@ namespace OOPS
                             catch (FileNotFoundException fnot)
                             {
                                 Console.WriteLine(fnot.Message);
+                                System.Console.WriteLine();
 
                             }
                             catch (Exception e)
                             {
                                 Console.WriteLine("Add Error : " + e.Message);
+                                
                             }
 
                             break;
@@ -547,19 +549,19 @@ namespace OOPS
         /// <summary>
         /// The random is uses to genrate the random cards within the buundle of cards
         /// </summary>
-        Random random = new Random();
+       readonly Random random = new Random();
         /// <summary>
         /// this array is use to give the cards with some symbols that are in cards game only
         /// </summary>
-        string[] suite = { "Clubs", "Diamonds", "Hearts", "Spades" };
+        readonly string[] suite = { "Clubs", "Diamonds", "Hearts", "Spades" };
 
         int i, j;
         /// <summary>
         /// this array is use to have the all cards
         /// </summary>
-        string[] rank = { "2", "3", "4", "5", "6", "7", "8", "9", "10", "Jack", "Queen", "King", "Ace" };
+      readonly  string[] rank = { "2", "3", "4", "5", "6", "7", "8", "9", "10", "Jack", "Queen", "King", "Ace" };
        readonly string[,] player = new string[9, 4];
-       readonly int[,] sorting = new int[4,9];
+       readonly string[,] sorting = new string[4,9];
         public void Sort(int[,] player,int n)
         {
            ////string temp;
@@ -570,7 +572,7 @@ namespace OOPS
                 {
                     int index = this.random.Next(this.rank.Length);
                     string card = Convert.ToString(index);
-                    //// sorting[i,j] = rank[index];
+                   sorting[i,j] = rank[index];
                     /*if (i==2)
                     {
                         if (sorting[j].CompareTo(sorting[j + 1]) > 0)

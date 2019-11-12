@@ -17,7 +17,7 @@ namespace OOPS
         
         int choice;
         bool flag = true;
-        Utility utility = new Utility();
+      readonly  Utility utility = new Utility();
     public void StockDetails()
         {
             try

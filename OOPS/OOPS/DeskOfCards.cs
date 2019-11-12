@@ -42,7 +42,7 @@ namespace OOPS
                     int index = random.Next(rank.Length);
                     string card = Convert.ToString(index);
                     player[i, j] = index;
-                    Console.Write(player[i, j] + " ");
+                   //// Console.Write(player[i, j] + " ");
                     if (i == 2 && j == 0)
                     {
                       ////  player[i, j] = rank[index];

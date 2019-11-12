@@ -34,6 +34,11 @@
       "Name": "Aj2",
       "Weight": 10,
       "Price": 200
+    },
+    {
+      "Name": "Bombay Stock",
+      "Weight": 400,
+      "Price": 120
     }
   ]
 }

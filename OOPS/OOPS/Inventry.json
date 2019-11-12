@@ -28,11 +28,6 @@
   ],
   "Pulses": [
     {
-      "Name": "Mung Daal",
-      "Weight": 65,
-      "Price": 7
-    },
-    {
       "name": "Toor Daal",
       "weight": 1,
       "price": 122

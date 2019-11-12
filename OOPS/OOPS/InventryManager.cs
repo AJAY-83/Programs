@@ -44,6 +44,8 @@ namespace OOPS
                             Utility.DeleteInventory();
                             break;
                         case 4:
+                            //// flag will false when user press 4
+                            //// and program will stop
                             flag = false;
                             break;
                         case 5:

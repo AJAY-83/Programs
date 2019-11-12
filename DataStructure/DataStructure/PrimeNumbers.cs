@@ -30,7 +30,7 @@ namespace DataStructure
             //// array is use tp store the values in array
             //// 10 is the rows and 167  is the total prime number
             int[,] array = new int[10, 167];
-            ////prime_numbers array is use to get the all prime number within 0to 1000 
+            ////prime_numbers array is use to get the all prime number within 0 to 1000 
             //// that are the return by the ChechPrimeNumbers
             int[] prime_numbers = this.utility.CheckPrimeNumbers();
             //// range array have the all ranges of  prime nunber

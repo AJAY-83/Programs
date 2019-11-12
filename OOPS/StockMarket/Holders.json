@@ -163,6 +163,14 @@
       "Since": "2019",
       "Date": "11-09-2019",
       "Company": "Capgemini_Holders"
+    },
+    {
+      "Name": "Manisha Patil",
+      "Shares": "10",
+      "Money": "1000",
+      "Since": "2019",
+      "Date": "11-11-2019",
+      "Company": "Capgemini_Holders"
     }
   ],
   "TATA_Holders": [

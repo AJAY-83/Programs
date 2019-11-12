@@ -55,6 +55,14 @@
       "Shares": "1",
       "Deducated_Amount": "400",
       "Total_Amount": "100"
+    },
+    {
+      "Name": "Manisha Patil",
+      "Company": "Capgemini",
+      "Date": "11-11-2019",
+      "Shares": "10",
+      "Deducated_Amount": "4000",
+      "Total_Amount": "1000"
     }
   ]
 }

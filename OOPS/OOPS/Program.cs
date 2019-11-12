@@ -21,6 +21,7 @@ namespace OOPS
     /// </summary>
     public class Program
     {
+        
         /// <summary>
         /// Defines the entry point of the application.
         /// </summary>
@@ -36,6 +37,7 @@ namespace OOPS
                 {
                     Console.WriteLine(" 1. Desk Of Cards\n 2. Inventry \n 3. Inventry Managment \n 4. StockReport \n 5. Exit ");
                     Console.WriteLine("Enter your choice");
+                    
                     choice = Convert.ToInt32(Console.ReadLine());
                     switch (choice)
                     {
