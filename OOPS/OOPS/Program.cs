@@ -21,7 +21,6 @@ namespace OOPS
     /// </summary>
     public class Program
     {
-        
         /// <summary>
         /// Defines the entry point of the application.
         /// </summary>
@@ -56,7 +55,7 @@ namespace OOPS
                             //// we can change that and also we can delete and add also
                             InventryManager.Inventory();
                             break;
-                            
+
                         case 4:
                             ////Stock class have the store report
                             StockReport stock = new StockReport();

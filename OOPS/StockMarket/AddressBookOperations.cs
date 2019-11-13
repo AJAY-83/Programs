@@ -54,9 +54,8 @@ namespace StockMarket
                 Console.WriteLine("Phone Number: " + addressObj.phoneNum);
             }
         }
-
         /// <summary>
-        /// Add the person.
+        /// Adds the person.
         /// </summary>
         public static void AddPerson()
         {

@@ -13,7 +13,6 @@ namespace OOPS
     using System.Collections.Generic;
     using System.IO;
     using System.Linq;
-    
 
     /// <summary>
     /// Utility class for all programs.
@@ -53,7 +52,7 @@ namespace OOPS
       public List<Stock> Stock { get; set; }
 
         /// <summary>
-        /// Inventory management which reads json file.
+        /// Inventory management which reads JSON file.
         /// </summary>
         public static void InventoryManagement()
         {
@@ -122,6 +121,9 @@ namespace OOPS
             streamReader.Close();
         }
 
+        /// <summary>
+        /// Adds the inventory.
+        /// </summary>
         public static void AddInventory()
         {
             try
@@ -199,14 +201,11 @@ namespace OOPS
                             {
                                 Console.WriteLine(fnot.Message);
                                 System.Console.WriteLine();
-
                             }
                             catch (Exception e)
                             {
-                                Console.WriteLine("Add Error : " + e.Message);
-                                
+                                Console.WriteLine("Add Error : " + e.Message);                                
                             }
-
                             break;
                         case 3:
                             Console.WriteLine("Enter Wheat Name : ");
@@ -547,32 +546,48 @@ namespace OOPS
         /************************** Print the Player Cards *******************************************************************************/
 
         /// <summary>
-        /// The random is uses to genrate the random cards within the buundle of cards
+        /// The random is uses to generate the random cards within the bundle of cards
         /// </summary>
-       readonly Random random = new Random();
+       private readonly Random random = new Random();
+
         /// <summary>
         /// this array is use to give the cards with some symbols that are in cards game only
         /// </summary>
-        readonly string[] suite = { "Clubs", "Diamonds", "Hearts", "Spades" };
+        private readonly string[] suite = { "Clubs", "Diamonds", "Hearts", "Spades" };
+        private int i, j;
 
-        int i, j;
         /// <summary>
         /// this array is use to have the all cards
         /// </summary>
-      readonly  string[] rank = { "2", "3", "4", "5", "6", "7", "8", "9", "10", "Jack", "Queen", "King", "Ace" };
-       readonly string[,] player = new string[9, 4];
-       readonly string[,] sorting = new string[4,9];
-        public void Sort(int[,] player,int n)
+     private readonly string[] rank = { "2", "3", "4", "5", "6", "7", "8", "9", "10", "Jack", "Queen", "King", "Ace" };
+
+        /// <summary>
+        /// The player Array is use to store the all values into the Two-D Array
+        /// Player array have the 10 rows and  all are the 165 elements
+        /// </summary>
+        private readonly string[,] player = new string[9, 4];
+
+        /// <summary>
+        /// The sorting array use to sort the array
+        /// </summary>
+       private readonly string[,] sorting = new string[4, 9];
+
+        /// <summary>
+        /// Sorts the specified player.
+        /// </summary>
+        /// <param name="player">The player.</param>
+        /// <param name="n">The n.</param>
+        public void Sort(int[,] player, int n)
         {
            ////string temp;
-            string[,] sort = new string[9,4];
-            for ( i = 0; i < 3; i++)
+            string[,] sort = new string[9, 4];
+            for (this.i = 0; this.i < 3; this.i++)
             {
-                for (j = 0; j < 4; j++)
+                for (this.j = 0; this.j < 4; this.j++)
                 {
                     int index = this.random.Next(this.rank.Length);
                     string card = Convert.ToString(index);
-                   sorting[i,j] = rank[index];
+                   this.sorting[this.i, this.j] = this.rank[index];
                     /*if (i==2)
                     {
                         if (sorting[j].CompareTo(sorting[j + 1]) > 0)
@@ -608,6 +623,9 @@ namespace OOPS
             Console.WriteLine("------------------------------");
         }
         /******************************* Stock Report ***********************************************/
+        /// <summary>
+        /// Displies the report.
+        /// </summary>
         public static void DisplyReport()
         {
             double totalshares = 0;
@@ -640,6 +658,9 @@ namespace OOPS
              
         }
 
+        /// <summary>
+        /// Adds the data.
+        /// </summary>
         public static void AddData()
         {
             Label:
