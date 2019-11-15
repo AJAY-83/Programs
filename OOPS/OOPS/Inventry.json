@@ -24,6 +24,11 @@
       "Name": "Basmati",
       "Weight": 5,
       "Price": 60
+    },
+    {
+      "Name": "Indrayani",
+      "Weight": 5,
+      "Price": 300
     }
   ],
   "Pulses": [
