@@ -14,7 +14,7 @@ namespace Creational_Pattern
     using System.Threading.Tasks;
 
     /// <summary>
-    ///  Main class to perform the operation
+    ///  Main class to perform the operation.
     /// </summary>
     public class Program
     {
@@ -24,37 +24,62 @@ namespace Creational_Pattern
         /// <param name="args">The arguments.</param>
         public static void Main(string[] args)
         {
-            //// Threading task it is divide the work  like loop
-            Parallel.Invoke(
-                () => PrintStudent(),
-                () => PrintEmployee());
-            Console.ReadLine();
+            int choice;
+            bool flag = true;
+            while (flag)
+            {
+                Console.WriteLine("\n -------------- Desing Pattern -------------------\n");
+                Console.WriteLine(" 1. Singleton pattern \n 2. Factory Pattern \n 3. Prototype Pattern \n 4. Exit");
+                Console.WriteLine("Enter Your Choice : ");
+                choice = Convert.ToInt32(Console.ReadLine());
+                switch (choice)
+                {
+                    case 1:
+                        SingletonPattern singleton = new SingletonPattern();
+                        singleton.SingletonFactory();
+                        break;
+                    case 2:
+                        FactoryPattern.MainFactory.Factory();
+                        break;
+                    case 3:
+                        Prototype_Pattern.Employee emp = new Prototype_Pattern.Employee();
+                        emp.PrototypeFunction();
+                        break;
+
+                    case 4:
+                        flag = false;
+                        break;
+                    default:
+                        Console.WriteLine("You entered wrong input please try again");
+                        break;
+                }
+            }
         }
 
         /// <summary>
         /// Prints the student.
         /// </summary>
-        private static void PrintStudent()
-        {
-            /*
-            * Assuming Singleton is created from the student class
-            * we refer to GetInstance property from the singleton class 
-            */
-            Singleton fromstudent = Singleton.GetInstance;
-            fromstudent.PrintDetails("From Student");
-        }
+        //private static void PrintStudent()
+        //{
+        //    /*
+        //    * Assuming Singleton is created from the student class
+        //    * we refer to GetInstance property from the singleton class 
+        //    */
+        //    Singleton fromstudent = Singleton.GetInstance;
+        //    fromstudent.PrintDetails("From Student");
+        //}
 
-        /// <summary>
-        /// Prints the employee.
-        /// </summary>
-        private static void PrintEmployee()
-        {
-            /*
-             * Assuming Singleton is created from the employee class
-             * we refer to GetInstance property from the singleton class 
-             */
-            Singleton fromemployee = Singleton.GetInstance;
-            fromemployee.PrintDetails("From Employee");
-        }
+        ///// <summary>
+        ///// Prints the employee.
+        ///// </summary>
+        //private static void PrintEmployee()
+        //{
+        //    /*
+        //     * Assuming Singleton is created from the employee class
+        //     * we refer to GetInstance property from the singleton class 
+        //     */
+        //    Singleton fromemployee = Singleton.GetInstance;
+        //    fromemployee.PrintDetails("From Employee");
+        //}
     }
 }

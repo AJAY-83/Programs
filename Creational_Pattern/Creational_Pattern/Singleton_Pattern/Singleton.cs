@@ -13,12 +13,12 @@ namespace Creational_Pattern
     /// how to create a single instance of any class.
     /// sealed restrict the inheritance
     /// </summary>
-   public sealed class Singleton
+    public sealed class Singleton
     {
         /// <summary>
         /// The object is use to store the instance to invoking the lock block single time
         /// </summary>
-         private static Object obj = new object();
+        private static Object obj = new object();
 
         /// <summary>
         /// The counter is checks only how much time it will create a instance of a class
@@ -31,18 +31,18 @@ namespace Creational_Pattern
         private static Singleton instance = null;
 
         /// Lazy Initialization
-       /// public static readonly Lazy<Singleton> instance = new Lazy<Singleton>(()=>new Singleton());
+        /// public static readonly Lazy<Singleton> instance = new Lazy<Singleton>(()=>new Singleton());
         /// <summary>
         /// Prevents a default instance of the <see cref="Singleton"/> class from being created.
         /// the private constructor ensures the object is not instantiated
         /// other than with in the class itself.
         /// </summary>
-      private Singleton()
+        private Singleton()
         {
             counter++;
             Console.WriteLine("Counter value : {0}", counter.ToString());
         }
-        
+
         /// <summary>
         /// Gets the get instance.
         /// public property is used to return only one instance of the class
