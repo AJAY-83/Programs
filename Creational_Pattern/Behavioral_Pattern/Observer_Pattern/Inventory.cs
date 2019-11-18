@@ -1,10 +1,20 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿// --------------------------------------------------------------------------------------------------------------------
+// <Copyright file="Company.cs" company="Bridgelabz">
+//   Copyright © 2019 Company="BridgeLabz"
+// </copyright>
+// <creator name="Ajay Lodale"/>
+// --------------------------------------------------------------------------------------------------------------------
 
 namespace Behavioral_Pattern.Observer_Pattern
 {
-   public class Inventry :InventryInterface
+    using System;
+    using System.Collections.Generic;
+    using System.Text;
+
+    /// <summary>
+    /// Inventory class is inherited from the InventoryInterface
+    /// </summary>
+    public class Inventory : InventoryInterface
     {
         /// <summary>
         /// name as field

@@ -34,7 +34,7 @@ namespace Structural_Pattern.Facade_Pattern
             this.book = new Book();
             this.bookType = new BookType();
             this.bookInfo = new BookInfo();
-            this.userData = new UserDataClass();
+            this.userData = new UserData();
         }
 
         /// <summary>

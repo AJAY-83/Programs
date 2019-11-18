@@ -1,5 +1,5 @@
 ﻿// --------------------------------------------------------------------------------------------------------------------
-// <copyright file="Program.cs" company="Bridgelabz">
+// <Copyright file="Program.cs" company="Bridgelabz">
 //   Copyright © 2019 Company="BridgeLabz"
 // </copyright>
 // <creator name="Ajay Lodale"/>
@@ -14,7 +14,7 @@ namespace Creational_Pattern
     using System.Threading.Tasks;
 
     /// <summary>
-    ///  Main class to perform the operation
+    ///  Main class to perform the operation.
     /// </summary>
     public class SingletonPattern
     {
@@ -38,7 +38,7 @@ namespace Creational_Pattern
         {
             /*
             * Assuming Singleton is created from the student class
-            * we refer to GetInstance property from the singleton class 
+            * we refer to GetInstance property from the singleton class.
             */
             Singleton fromstudent = Singleton.GetInstance;
             fromstudent.PrintDetails("From Student");
@@ -51,11 +51,10 @@ namespace Creational_Pattern
         {
             /*
              * Assuming Singleton is created from the employee class
-             * we refer to GetInstance property from the singleton class 
+             * we refer to GetInstance property from the singleton class.
              */
             Singleton fromemployee = Singleton.GetInstance;
             fromemployee.PrintDetails("From Employee");
         }
     }
 }
-

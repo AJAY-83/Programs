@@ -1,5 +1,5 @@
 ﻿// --------------------------------------------------------------------------------------------------------------------
-// <copyright file="Employee.cs" company="Bridgelabz">
+// <Copyright file="Employee.cs" company="Bridgelabz">
 //   Copyright © 2019 Company="BridgeLabz"
 // </copyright>
 // <creator name="Ajay Lodale"/>
@@ -14,12 +14,12 @@ namespace Creational_Pattern.Prototype_Pattern
     using System.Threading.Tasks;
 
     /// <summary>
-    /// Employee class have the details about the employee
+    /// Employee class have the details about the employee.
     /// </summary>
     public class Employee
     {
         /// <summary>
-        /// PrototypeFunction as function
+        /// PrototypeFunction as function.
         /// </summary>
         public void PrototypeFunction()
         {
@@ -35,7 +35,6 @@ namespace Creational_Pattern.Prototype_Pattern
                 SoftwareDeveloper developer = (SoftwareDeveloper)software.Clone();
                 developer.EmployeeId = "2";
                 developer.EmployeeName = "Saurabh";
-               
                 Console.WriteLine(software.GetEmployeeDetails());
                 Console.WriteLine(developer.GetEmployeeDetails());
 

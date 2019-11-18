@@ -1,10 +1,20 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿// --------------------------------------------------------------------------------------------------------------------
+// <Copyright file="Stock.cs" company="Bridgelabz">
+//   Copyright © 2019 Company="BridgeLabz"
+// </copyright>
+// <creator name="Ajay Lodale"/>
+// --------------------------------------------------------------------------------------------------------------------
 
 namespace Behavioral_Pattern.Observer_Pattern
 {
-   public abstract class Stock
+    using System;
+    using System.Collections.Generic;
+    using System.Text;
+
+    /// <summary>
+    /// Stock is the abstract class 
+    /// </summary>
+    public abstract class Stock
     {
         /// <summary>
         /// symbol as field

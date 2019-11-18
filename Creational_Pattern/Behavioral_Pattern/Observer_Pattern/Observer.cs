@@ -1,10 +1,20 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿// --------------------------------------------------------------------------------------------------------------------
+// <Copyright file="Observer.cs" company="Bridgelabz">
+//   Copyright © 2019 Company="BridgeLabz"
+// </copyright>
+// <creator name="Ajay Lodale"/>
+// --------------------------------------------------------------------------------------------------------------------
 
 namespace Behavioral_Pattern.Observer_Pattern
 {
-   public class Observer
+    using System;
+    using System.Collections.Generic;
+    using System.Text;
+
+    /// <summary>
+    /// Observer is the class with ObserverFunction()
+    /// </summary>
+    public class Observer
     {
         /// <summary>
         /// ObserverFunction as function

@@ -59,27 +59,27 @@ namespace Creational_Pattern
         /// <summary>
         /// Prints the student.
         /// </summary>
-        //private static void PrintStudent()
-        //{
-        //    /*
-        //    * Assuming Singleton is created from the student class
-        //    * we refer to GetInstance property from the singleton class 
-        //    */
-        //    Singleton fromstudent = Singleton.GetInstance;
-        //    fromstudent.PrintDetails("From Student");
-        //}
+        ////private static void PrintStudent()
+        ////{
+            /*
+            * Assuming Singleton is created from the student class
+            * we refer to GetInstance property from the singleton class 
+           */
+        ////    Singleton fromstudent = Singleton.GetInstance;
+        ////    fromstudent.PrintDetails("From Student");
+        ////}
 
         ///// <summary>
         ///// Prints the employee.
         ///// </summary>
-        //private static void PrintEmployee()
-        //{
-        //    /*
-        //     * Assuming Singleton is created from the employee class
-        //     * we refer to GetInstance property from the singleton class 
-        //     */
-        //    Singleton fromemployee = Singleton.GetInstance;
-        //    fromemployee.PrintDetails("From Employee");
-        //}
+        ////private static void PrintEmployee()
+        ////{
+           /*
+             * Assuming Singleton is created from the employee class
+             * we refer to GetInstance property from the singleton class 
+             */
+        ////    Singleton fromemployee = Singleton.GetInstance;
+        ////    fromemployee.PrintDetails("From Employee");
+        ////}
     }
 }

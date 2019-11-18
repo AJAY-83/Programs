@@ -37,4 +37,3 @@ namespace Structural_Pattern.Proxy_Pattern
         }
     }
 }
-}

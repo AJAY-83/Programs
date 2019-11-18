@@ -5,4 +5,19 @@
     <TargetFramework>netcoreapp2.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Compile Remove="Mediator_Pattern\ConcreteColleagueB.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Mediator_Pattern\ConcreteColleagueB.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Mediator_Pattern\ConcreteColleagueA.cs">
+      <ExcludeFromSourceAnalysis>True</ExcludeFromSourceAnalysis>
+      <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
+    </Compile>
+  </ItemGroup>
+
 </Project>

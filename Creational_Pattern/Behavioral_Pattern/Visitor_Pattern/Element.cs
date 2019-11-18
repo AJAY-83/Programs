@@ -1,25 +1,25 @@
 ﻿// --------------------------------------------------------------------------------------------------------------------
-// <Copyright file="InventoryInterface.cs" company="Bridgelabz">
+// <Copyright file="Element.cs" company="Bridgelabz">
 //   Copyright © 2019 Company="BridgeLabz"
 // </copyright>
 // <creator name="Ajay Lodale"/>
 // --------------------------------------------------------------------------------------------------------------------
 
-namespace Behavioral_Pattern.Observer_Pattern
+namespace Behavioral_Pattern.Visitor_Pattern
 {
     using System;
     using System.Collections.Generic;
     using System.Text;
 
     /// <summary>
-    /// InventoryInterface is the interface is used to update the details
+    /// Element is the abstract class 
     /// </summary>
-    public interface InventoryInterface
+    public abstract class Element
     {
         /// <summary>
-        /// Update as function
+        /// AcceptVisitor as function
         /// </summary>
-        /// <param name="stock">stockClass as object</param>
-        void Update(Stock stock);
+        /// <param name="visitor">AcceptVisitor as object</param>
+        public abstract void AcceptVisitor(Visitor visitor);
     }
 }

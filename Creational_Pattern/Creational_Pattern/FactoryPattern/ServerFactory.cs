@@ -1,5 +1,5 @@
 ﻿// --------------------------------------------------------------------------------------------------------------------
-// <copyright file="ServerFactory.cs" company="Bridgelabz">
+// <Copyright file="ServerFactory.cs" company="Bridgelabz">
 //   Copyright © 2019 Company="BridgeLabz"
 // </copyright>
 // <creator name="Ajay Lodale"/>
@@ -14,7 +14,7 @@ namespace Creational_Pattern.FactoryPattern
     using System.Threading.Tasks;
 
     public abstract class ServerFactory
-    {       
+    {
             /// <summary>
             /// GetFactory as function.
             /// </summary>
