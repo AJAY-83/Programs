@@ -1,9 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿// --------------------------------------------------------------------------------------------------------------------
+// <Copyright file="ProxyClient.cs" company="Bridgelabz">
+//   Copyright © 2019 Company="BridgeLabz"
+// </copyright>
+// <creator name="Ajay Lodale"/>
+// --------------------------------------------------------------------------------------------------------------------
 
 namespace Structural_Pattern.Proxy_Pattern
 {
+    using System;
+    using System.Collections.Generic;
+    using System.Text;
     public class ProxyClient:IClient
     {
         /// <summary>

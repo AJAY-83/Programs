@@ -45,7 +45,7 @@ namespace Behavioral_Pattern.Visitor_Pattern
         {
             try
             {
-                Console.WriteLine("{0} Visited by {1}", concreteElementB.GetType().Name, this.GetType().Name);
+                Console.WriteLine("{0} Visited by {1}", this.concreteElementB.GetType().Name, this.GetType().Name);
             }
             catch (Exception ex)
             {

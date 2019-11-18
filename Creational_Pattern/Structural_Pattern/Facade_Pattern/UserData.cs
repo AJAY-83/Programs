@@ -1,10 +1,17 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿//--------------------------------------------------------------------------------------------------------------------
+// <Copyright file="UserData.cs" company="Bridgelabz">
+//   Copyright © 2019 Company="BridgeLabz"
+// </copyright>
+// <creator name="Ajay Lodale"/>
+// --------------------------------------------------------------------------------------------------------------------
 
 namespace Structural_Pattern.Facade_Pattern
 {
-   public class UserData
+    using System;
+    using System.Collections.Generic;
+    using System.Text;
+
+    public class UserData
     {
         /// <summary>
         /// UserDetails as function

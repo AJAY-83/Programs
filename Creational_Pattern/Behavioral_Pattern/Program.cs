@@ -23,8 +23,8 @@ namespace Behavioral_Pattern
                         Visitor_Pattern.MainVisitor.VisitorFunction();
                         break;
                     case 3:
-                        Proxy_Pattern.Proxy proxy = new Proxy_Pattern.Proxy();
-                        proxy.ProxyFunction();
+                        //Proxy_Pattern.Proxy proxy = new Proxy_Pattern.Proxy();
+                        //proxy.ProxyFunction();
                         break;
                     case 4:
                         flag = false;

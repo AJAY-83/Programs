@@ -1,10 +1,21 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿// --------------------------------------------------------------------------------------------------------------------
+// <Copyright file="IClient.cs" company="Bridgelabz">
+//   Copyright © 2019 Company="BridgeLabz"
+// </copyright>
+// <creator name="Ajay Lodale"/>
+// --------------------------------------------------------------------------------------------------------------------
 
 namespace Structural_Pattern.Proxy_Pattern
 {
-   public interface IClient
+    using System;
+    using System.Collections.Generic;
+    using System.Text;
+
+    /// <summary>
+    /// IClient is the Interface 
+    /// In that have get GetData
+    /// </summary>
+    public interface IClient
     {
         /// <summary>
         /// GetData as function.

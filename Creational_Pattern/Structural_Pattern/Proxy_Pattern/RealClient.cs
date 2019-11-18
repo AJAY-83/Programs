@@ -1,9 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿// --------------------------------------------------------------------------------------------------------------------
+// <Copyright file="RealClient.cs" company="Bridgelabz">
+//   Copyright © 2019 Company="BridgeLabz"
+// </copyright>
+// <creator name="Ajay Lodale"/>
+// --------------------------------------------------------------------------------------------------------------------
 
 namespace Structural_Pattern.Proxy_Pattern
 {
+    using System;
+    using System.Collections.Generic;
+    using System.Text;
     public class RealClient:IClient
     {
         /// <summary>
